@@ -13,8 +13,8 @@ start:
 
 ; So far so good
 ; It’s now time to set up the arguments for the BIOS print procedure.
-mov si, msg       ; pointer to the message in SI
-mov ah, 0x0E      ; print char BIOS procedure
+  mov si, msg       ; pointer to the message in SI
+  mov ah, 0x0E      ; print char BIOS procedure
 
 ; Now for the printing of the message; we will load one byte
 ; from whatever SI is pointing to
