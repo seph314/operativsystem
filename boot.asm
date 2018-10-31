@@ -37,7 +37,7 @@ start:
   jmp $               ; loop forever
 
 ; the message we want to print
-msg:  db ’Hello’, 0   ; the string we want to print
+msg: db 'Hello', 0   ; the string we want to print
 
 ;Now for the magic, we need to turn this into a 512-byte sequence with
 ;a precise master boot record signature ( 0xAA55) at the end.
